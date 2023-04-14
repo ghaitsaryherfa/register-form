@@ -1,0 +1,156 @@
+.form-recruitment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.neuron-logo {
+    width: 128px;
+    margin: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+.recruitment {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 94vh;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.text-danger {
+    color: #e53935 !important
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    padding: 12px 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background-color: #1e88e5;
+    border-color: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn.btn-primary:hover {
+    background: #1565c0 !important;
+}
+
+.recruitmen-image {
+    width: 50%;
+    height: 100%;
+}
+
+.starlid-illustration {
+    width: 130%;
+    height: 100%;
+}
+
+.recruitment-form-dialog {
+    width: 58%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 32px;
+    margin: auto;
+}
+
+.web-recruitment {
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 32px;
+    margin: 24px 32px;
+    color: #424242 !important;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 16px;
+    color: #424242 !important;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #1e88e5 !important;
+}
+
+.link-sosmed:hover {
+    color: #1e88e5 !important;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Source Sans Pro';
+}
+
+a {
+    text-decoration: none;
+    color: #424242;
+}
+
+h2 {
+    margin-bottom: 2px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .recruitmen-image {
+        display: none;
+    }
+
+    .container-form {
+        width: 100%;
+    }
+
+    .recruitment-form-dialog {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recruitment-form-dialog {
+        width: 80vw;
+        height: 100%;
+    }
+}
