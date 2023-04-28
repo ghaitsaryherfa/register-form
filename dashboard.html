@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2cc5207503.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-title" href="#">Monitoring Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-main">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="d-flex justify-content-start">
+                                <i class="card-icon fa fa-line-chart"></i>
+                                <h5 class="ml-4">Kinerja Produksi</h5>
+                            </div>
+                            <div class="row justify-content-between mt-4">
+                                <div class="card card-unit col-md-3 p-4 unit-1">
+                                    <div class="card-body">
+                                        <p>Daily - Unit 1</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>1200</h3>
+                                            <p style="margin-left: 4px;">MWh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 p-4 unit-2">
+                                    <div class="card-body">
+                                        <p>Daily - Unit 2</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>1230</h3>
+                                            <p style="margin-left: 4px;">MWh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 p-4 unit-3">
+                                    <div class="card-body">
+                                        <p>Daily - Unit 3</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>1024</h3>
+                                            <p style="margin-left: 4px;">MWh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="card card-unit col-md-12 p-1 monthly">
+                                    <div class="card-body">
+                                        <p>Monthly</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>103634</h3>
+                                            <p style="margin-left: 4px;">MWh</p>
+                                        </div>
+                                        <p>Pencapaian 70%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="card card-unit col-md-12 p-2 yearly">
+                                    <div class="card-body">
+                                        <p>Yearly</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>1139974</h3>
+                                            <p style="margin-left: 4px;">MWh</p>
+                                        </div>
+                                        <p>Pencapaian 73%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-main">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="d-flex justify-content-start">
+                                <i class='card-icon fas fa-atom'></i>
+                                <h5 class="ml-4">Kondisi Hidrologi (Discharge)</h5>
+                            </div>
+                            <div class="row justify-content-between mt-4">
+                                <div class="card card-unit col-md-3 pb-3 unit-1">
+                                    <div class="card-body">
+                                        <p>Daily</p>
+                                        <p style="font-size: 12px;">Rata-rata (Unit 1)</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>55,00</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 pb-3 unit-2">
+                                    <div class="card-body">
+                                        <p>Daily</p>
+                                        <p style="font-size: 12px;">Rata-rata (Unit 2)</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>56,00</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 pb-3 unit-3">
+                                    <div class="card-body">
+                                        <p>Daily</p>
+                                        <p style="font-size: 12px;">Total Rata-rata</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>55,5</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-4">
+                                <div class="card card-unit col-md-3 pb-3 unit-1">
+                                    <div class="card-body">
+                                        <p>Monthly</p>
+                                        <p style="font-size: 12px;">Rata-rata (Unit 1)</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>45,46</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 pb-3 unit-2">
+                                    <div class="card-body">
+                                        <p>Monthly</p>
+                                        <p style="font-size: 12px;">Rata-rata (Unit 2)</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>51,32</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 pb-3 unit-3">
+                                    <div class="card-body">
+                                        <p>Monthly</p>
+                                        <p style="font-size: 12px;">Total Rata-rata</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>48,39</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between mt-4">
+                                <div class="card card-unit col-md-3 pb-3 unit-1">
+                                    <div class="card-body">
+                                        <p>Yearly</p>
+                                        <p style="font-size: 12px;">Rata-rata (Unit 1)</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>58,76</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 pb-3 unit-2">
+                                    <div class="card-body">
+                                        <p>Yearly</p>
+                                        <p style="font-size: 12px;">Rata-rata (Unit 2)</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>60,85</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-unit col-md-3 pb-3 unit-3">
+                                    <div class="card-body">
+                                        <p>Monthly</p>
+                                        <p style="font-size: 12px;">Total Rata-rata</p>
+                                        <div class="d-flex justify-content-start">
+                                            <h3>59.805</h3>
+                                            <p style="margin-left: 4px;">m3/s</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card card-main">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="d-flex justify-content-start">
+                                <i class="card-icon fa fa-pie-chart"></i>
+                                <h5 class="ml-4">Kinerja Operasi</h5>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <p style="color:#212529 !important;">Daily</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress-stacked">
+                                        <div class="progress" role="progressbar" aria-label="Segment one"
+                                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%"
+                                            title="1%">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Segment two"
+                                            aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%"
+                                            title="2%">
+                                            <div class="progress-bar bg-success"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <p style="color:#212529 !important;">Monthly</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress" role="progressbar" aria-label="Example with label"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar monthly-ops" style="width: 70%">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <p style="color:#212529 !important;">Yearly</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress" role="progressbar" aria-label="Example with label"
+                                        aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar yearly-ops" style="width: 73%">73%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-main">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="d-flex justify-content-start">
+                                <i class="card-icon fas fa-burn"></i>
+                                <h5 class="ml-4">Kondisi Hidrologi (Water Level)</h5>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <p style="color:#212529 !important;">Daily</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress" role="progressbar" aria-label="Example with label"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar daily-bar" style="width: 93%">903,50 m</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <p style="color:#212529 !important;">Monthly</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress" role="progressbar" aria-label="Example with label"
+                                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar monthly-bar" style="width: 95%">905,43 m</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-2">
+                                    <p style="color:#212529 !important;">Yearly</p>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="progress" role="progressbar" aria-label="Example with label"
+                                        aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar yearly-bar" style="width: 93%">903,9 m</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card card-main">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-start">
+                            <i class="card-icon fas fa-water"></i>
+                            <h5 class="">Pemeliharaan Sungai</h5>
+                        </div>
+                        <div class="row">
+                            <div class="card card-category category-1">
+                                <div class="card-body">
+                                    <p>Plastik</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-md-2">
+                                            <div class="card card-volume trashboom-1">
+                                                <div class="card-body">
+                                                    <p>Trashboom 1</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>2</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 76%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume trashboom-2">
+                                                <div class="card-body">
+                                                    <p>Trashboom 2</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>16</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 90%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume intake-rack">
+                                                <div class="card-body">
+                                                    <p>Intake Rack</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>1</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 45%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume spiral-case">
+                                                <div class="card-body">
+                                                    <p>Spiral Case</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>0</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 0%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="card card-category category-2">
+                                <div class="card-body">
+                                    <p>Eceng Gondok</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-md-2">
+                                            <div class="card card-volume trashboom-1">
+                                                <div class="card-body">
+                                                    <p>Trashboom 1</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>2</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 34%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume trashboom-2">
+                                                <div class="card-body">
+                                                    <p>Trashboom 2</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>10</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 50%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume intake-rack">
+                                                <div class="card-body">
+                                                    <p>Intake Rack</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>1</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 45%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume spiral-case">
+                                                <div class="card-body">
+                                                    <p>Spiral Case</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>5</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 84%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="card card-category category-3">
+                                <div class="card-body">
+                                    <p>Lain-Lain</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="col-md-2">
+                                            <div class="card card-volume trashboom-1">
+                                                <div class="card-body">
+                                                    <p>Trashboom 1</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>3</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 56%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume trashboom-2">
+                                                <div class="card-body">
+                                                    <p>Trashboom 2</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>1</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 3%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume intake-rack">
+                                                <div class="card-body">
+                                                    <p>Intake Rack</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>2</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 75%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="card card-volume spiral-case">
+                                                <div class="card-body">
+                                                    <p>Spiral Case</p>
+                                                    <div class="d-flex justify-content-start">
+                                                        <h3>0</h3>
+                                                        <p style="margin-left: 4px;">m</p>
+                                                    </div>
+                                                    <p>Pencapaian 0%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

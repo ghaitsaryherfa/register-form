@@ -1,156 +1,144 @@
-.form-recruitment {
-    display: flex;
-    justify-content: space-between;
+.navbar {
+    background-color: #252733 !important;
 }
 
-.nav-header {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.navbar-title {
+    font-family: 'Mulish';
+    font-weight: bold;
+    color: white !important;
 }
 
-.neuron-logo {
-    width: 128px;
-    margin: 8px;
-    padding-left: 8px;
-    padding-top: 4px;
+.card {
+    background-color: transparent !important;
 }
 
-.recruitment {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    height: 94vh;
+.card-main {
+    border-color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px;
+
 }
 
-.container-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
+.card-unit:hover {
+    opacity: 0.6;
 }
 
-.text-danger {
-    color: #e53935 !important
+.card-icon {
+    font-size: 24px !important;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-control {
-    padding: 12px 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 12px;
-}
-
-.btn-primary {
-    background-color: #1e88e5;
-    border-color: #1e88e5;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 8px 0;
-    cursor: pointer;
-    border-radius: 4px;
+.card h3 {
+    color: white !important;
+    font-family: 'Mulish';
     font-weight: bold;
 }
 
-.btn.btn-primary:hover {
-    background: #1565c0 !important;
+.card p {
+    color: white !important;
+    font-family: 'Mulish';
+    font-weight: bold;
 }
 
-.recruitmen-image {
-    width: 50%;
-    height: 100%;
+.unit-1,
+.category-1 {
+    background-color: #3b76ef !important;
+    border-color: #3b76ef !important;
 }
 
-.starlid-illustration {
-    width: 130%;
-    height: 100%;
+.unit-2,
+.spiral-case {
+    background-color: #63c7ff !important;
+    border-color: #63c7ff !important;
 }
 
-.recruitment-form-dialog {
-    width: 58%;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 32px;
-    margin: auto;
+.unit-3,
+.intake-rack {
+    background-color: #a66dd4 !important;
+    border-color: #a66dd4 !important;
 }
 
-.web-recruitment {
-    height: 100%;
+.monthly,
+.category-2 {
+    background-color: #6dd4b1 !important;
+    border-color: #6dd4b1 !important;
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 32px;
-    margin: 24px 32px;
-    color: #424242 !important;
+.yearly,
+.trashboom-2 {
+    background-color: #d63384 !important;
+    border-color: #d63384 !important;
 }
 
-.copyright {
-    text-align: center;
-    font-size: 16px;
-    color: #424242 !important;
-    text-decoration: none;
+.trashboom-1 {
+    background-color: #d6ad33 !important;
+    border-color: #d6ad33 !important;
 }
 
-.copyright a:hover {
-    color: #1e88e5 !important;
-}
-
-.link-sosmed:hover {
-    color: #1e88e5 !important;
+.category-3 {
+    background-color: #E9ECEF !important;
+    border-color: #E9ECEF !important;
 }
 
 body {
-    margin: 0px;
-    font-family: 'Source Sans Pro';
+    background-color: #f7faff !important;
 }
 
-a {
-    text-decoration: none;
-    color: #424242;
+h5 {
+    margin-left: 12px;
 }
 
-h2 {
-    margin-bottom: 2px;
+.daily-bar,
+.yearly-bar {
+    animation: bardaily 3s normal forwards;
 }
 
-p {
-    margin-top: 10px;
-    font-size: 14px;
+.monthly-bar {
+    animation: barmonthly 3s normal forwards;
 }
 
-
-@media screen and (max-width: 1200px) {
-    .recruitmen-image {
-        display: none;
+@keyframes bardaily {
+    0% {
+        width: 0;
     }
 
-    .container-form {
-        width: 100%;
-    }
-
-    .recruitment-form-dialog {
-        width: 42%;
+    100% {
+        width: 93%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .recruitment-form-dialog {
-        width: 80vw;
-        height: 100%;
+@keyframes barmonthly {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+.monthly-ops {
+    animation: monthlyops 3s normal forwards;
+}
+
+.yearly-ops {
+    animation: yearlyops 3s normal forwards;
+}
+
+@keyframes monthlyops {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes yearlyops {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 73%;
     }
 }
