@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/2cc5207503.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Recruitment Form</title>
 </head>
 
@@ -24,41 +27,36 @@
                     <div>
                         <img class="neuron-logomark" alt="Neuron 3.0" src="Assets/logomark-sign.png" width="100px">
                     </div>
-                    <form id="recruitment-form">
+                    <form id="recruitment-form" name="recruitment-form">
                         <div>
                             <h2>Form Rekrutasi</h2>
                             <p>Isi data di bawah sesuai dengan identitas diri anda dan lowongan yang akan anda pilih</p>
                         </div>
                         <div class="form-group">
                             <label for="fullname">Fullname <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="fullname" placeholder="Masukkan nama">
+                            <input type="text" class="form-control" id="fullname" placeholder="Masukkan nama" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="email" placeholder="Masukkan email">
+                            <input type="text" class="form-control" id="email" placeholder="Masukkan email" required>
                         </div>
                         <div class="form-group">
                             <label for="telepon">Nomor Telepon <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="telepon" placeholder="Masukkan nomor telepon">
+                            <input type="text" class="form-control" id="telepon" placeholder="Masukkan nomor telepon"
+                                required>
                         </div>
                         <div class="form-group">
                             <label for="lowongan">Lowongan <span class="text-danger">*</span></label>
-                            <select class="form-control" id="lowongan">
-                                <option value="database">DATABASE DEVELOPER</option>
-                                <option value="backend">BACKEND PROGRAMMER</option>
-                                <option value="frontend">FRONTEND PROGRAMMER</option>
-                                <option value="fullstack">FULLSTACK PROGRAMMER</option>
-                            </select>
+                            <select class="form-control" id="lowongan" required></select>
                         </div>
                         <div class="form-group">
                             <label for="posisi">Posisi <span class="text-danger">*</span></label>
-                            <select class="form-control" id="posisi">
-                                <option value="bandung">BANDUNG</option>
-                                <option value="jakarta">JAKARTA</option>
+                            <select class="form-control" id="posisi" required>
                             </select>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary" id="login">Kirim</button>
+                            <button type="submit" class="btn btn-primary" id="login" name="submit"
+                                onclick="submitForm(event)">Kirim</button>
                         </div>
                     </form>
                     <div class="footer">
@@ -95,3 +93,45 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+    /*execute script when doc ready*/
+    $(document).ready(function () {
+
+        const lowongan = ['DATABASE DEVELOPER', 'BACKEND PROGRAMMER', 'FRONTEND PROGRAMMER', 'FULLSTACK PROGRAMMER'];
+        const posisi = ['BANDUNG', 'JAKARTA'];
+        // Function that is going to change the select options
+        function fillSelect(values, id) {
+            document.getElementById(id).innerHTML =
+                values.reduce((tmp, x) => `${tmp}<option value="${x}" id="option-${x.replace(" ", "-").toLowerCase()}">${x}</option>`, '');
+        }
+
+        fillSelect(lowongan, 'lowongan');
+        fillSelect(posisi, 'posisi');
+
+    });
+
+    function submitForm(e) {
+        e.preventDefault();
+        let fullname = $("#fullname").val();
+        let email = $("#email").val();
+        let telepon = $("#telepon").val();
+        let lowongan = $("#lowongan").val();
+        let posisi = $("#posisi").val();
+
+        if (fullname == '' || email == '' || telepon == '' || lowongan == '' || posisi == ''){
+            alert("Form wajib diisi");
+        }else{
+            alert("Sukses menyimpan data");
+            alert(`
+            Fullname : ${fullname}
+            Email : ${email}
+            Telepon : ${telepon}
+            Lowongan : ${lowongan}
+            Posisi : ${posisi}
+            `);
+        }
+
+    }
+
+</script>
