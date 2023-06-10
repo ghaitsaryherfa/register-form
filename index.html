@@ -94,44 +94,4 @@
 
 </html>
 
-<script type="text/javascript">
-    /*execute script when doc ready*/
-    $(document).ready(function () {
-
-        const lowongan = ['DATABASE DEVELOPER', 'BACKEND PROGRAMMER', 'FRONTEND PROGRAMMER', 'FULLSTACK PROGRAMMER'];
-        const posisi = ['BANDUNG', 'JAKARTA'];
-        // Function that is going to change the select options
-        function fillSelect(values, id) {
-            document.getElementById(id).innerHTML =
-                values.reduce((tmp, x) => `${tmp}<option value="${x}" id="option-${x.replace(" ", "-").toLowerCase()}">${x}</option>`, '');
-        }
-
-        fillSelect(lowongan, 'lowongan');
-        fillSelect(posisi, 'posisi');
-
-    });
-
-    function submitForm(e) {
-        e.preventDefault();
-        let fullname = $("#fullname").val();
-        let email = $("#email").val();
-        let telepon = $("#telepon").val();
-        let lowongan = $("#lowongan").val();
-        let posisi = $("#posisi").val();
-
-        if (fullname == '' || email == '' || telepon == '' || lowongan == '' || posisi == ''){
-            alert("Form wajib diisi");
-        }else{
-            alert("Sukses menyimpan data");
-            alert(`
-            Fullname : ${fullname}
-            Email : ${email}
-            Telepon : ${telepon}
-            Lowongan : ${lowongan}
-            Posisi : ${posisi}
-            `);
-        }
-
-    }
-
-</script>
+<script type="text/javascript" src="./index.js"></script>
